@@ -1,4 +1,4 @@
-<img align="left" width="90" height="90" src="https://raw.githubusercontent.com/Ordep22/Beginning-C-Plus-Plus-Programming-From-Beginner-to-Beyond/c6dfd9bf6130a8dcd6b1a5cf8140c905b424f14e/Images/C++.jpg">
+<img align="left" width="90" height="90" src="Images/C++.jpg">
 <p vertical-align="middle"><h1>Beginning C++ Programming From Beginner to Beyond</h1></p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;
