@@ -9,7 +9,7 @@ int main(){
 
     short value_two {1000};
 
-    long  product {value_one * value_two};
+    short product {value_one * value_two};
 
     cout << "The product of " << value_one << " and " << value_two << " is " << product << endl;
 
