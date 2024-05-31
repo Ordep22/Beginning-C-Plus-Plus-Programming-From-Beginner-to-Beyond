@@ -24,7 +24,7 @@ int main(){
     cout << "double float: " << sizeof(long double) << " bytes" << endl;
 
     //Use values defined in <climits>
-    //Minimun values
+   
     cout << "Minimum values:" << endl;
     cout << "Char:" << CHAR_MIN << endl;
     cout << "Int:" << INT_MIN << endl;
@@ -32,8 +32,8 @@ int main(){
     cout << "Long:" << LONG_MIN << endl;
     cout << "Long Long:" << LLONG_MIN << endl;
     
-    //Maximum values
-    cout << "Minimum values:" << endl;
+    
+    cout << "Max values:" << endl;
     cout << "Char:" << CHAR_MAX << endl;
     cout << "Int:" << INT_MAX << endl;
     cout << "Shot:" << SHRT_MAX << endl;
