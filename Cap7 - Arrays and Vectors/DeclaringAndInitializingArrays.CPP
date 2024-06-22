@@ -11,10 +11,10 @@ int main(){
     cout << "The last vowel is: " << vowels[4] << endl;
     */
 
-    const double hi_temps[] {90.1,89.8,77.5,81.6};
+    double hi_temps[] {90.1,89.8,77.5,81.6};
     cout  << "\nThe first high tempereture is: " << hi_temps[0] << endl;
-    //hi_temps[0] = 100.7;
-    //cout  << "\nThe first high tempereture is: " << hi_temps[0] << endl;
+    hi_temps[0] = 100.7;
+    cout  << "\nThe first high tempereture is now : " << hi_temps[0] << endl;
 
 
     
