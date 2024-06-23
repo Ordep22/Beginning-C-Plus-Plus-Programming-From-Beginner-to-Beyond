@@ -59,6 +59,7 @@
   "files.associations": {
     "iostream": "cpp",
     "xutility": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "vector": "cpp"
   }
 }
