@@ -18,7 +18,7 @@ int main (){
     dollars  = euros * EUR;
 
     cout << "-----------" <<"The convertion"<< "-----------" << endl;
-    cout << euros << " EUR is equivalent to " << dollars << "USD";
+    cout << euros << " EUR is equivalent to " << dollars << " USD";
 
 
     
