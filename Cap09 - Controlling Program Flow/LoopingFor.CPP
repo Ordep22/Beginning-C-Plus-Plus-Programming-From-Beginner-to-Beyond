@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    vector <int> numbers {10,20,30,40,50};
+    //vector <int> numbers {10,20,30,40,50};
     /**
         for (int i = 1; i <= 10; i += 2)
         {
@@ -34,34 +34,27 @@ int main()
         cout << i << " + " << j << " = " << i + j << endl;
     }
     */
-    /*
+   
     for (int i = 1; i <= 100; i++)
     {
 
         //cout << i;
 
         cout << i << ((i % 10 == 0) ? "\n" : " ");
-        
-                if (i % 10 == 0)
-                {
+       
+        if (i % 10 == 0)
+        {
 
-                    cout << endl;
-                }
-                else
-                {
+            cout << endl;
+        }
+        else
+        {
 
-                    cout << " ";
-                }
+            cout << " ";
+        }
         
     }
-    */
-
-   for (unsigned int i  = 0; i < numbers.size();++i){
-
-        cout << numbers[i] << endl;
-
-
-   }
+    
 
 
 }
