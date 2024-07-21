@@ -1,4 +1,4 @@
-<img align="left" width="90" height="90" src="Images/C++.jpg">
+<img align="left" width="90" height="90" src="Images/C++.png">
 <p vertical-align="middle"><h1>Beginning C++ Programming From Beginner to Beyond</h1></p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;
