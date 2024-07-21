@@ -41,7 +41,6 @@ int main(){
 
     while(!done){
 
-
         cout << "Enter a positive interger between 1 and 5:" << endl;
         cin >> number;
 
@@ -56,6 +55,7 @@ int main(){
         }
     }
 
-
+    cout << endl;
+    return 0;
 
 }
