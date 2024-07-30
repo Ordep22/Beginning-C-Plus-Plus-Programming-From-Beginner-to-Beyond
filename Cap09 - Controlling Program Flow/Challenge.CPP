@@ -7,8 +7,9 @@ int main(){
 
     char choice {};
     bool control {true};
+    int lastNumber {};
     vector <int> listNumbers {};
-
+    
     do{
 
         cout << "------------------------------------------" << endl;
@@ -26,44 +27,93 @@ int main(){
 
         switch (choice)
         {
-        case 'P':
-        case 'p':
-            
-            cout << "[P] - Print numbers" << endl;
+            case 'P':
+            case 'p':
+                
+                cout << "[P] - Print numbers" << endl;
 
-            cout << "["; 
-            for (int i  = 0; i < listNumbers.size(); ++i){
-                cout << " " << listNumbers[i];
+                cout << "["; 
+                for (int i  = 0; i < listNumbers.size(); ++i){
+                    cout << " " << listNumbers[i];
+                }
+                cout << " ]" << endl; 
+                break;
+
+            case 'A':
+            case 'a':
+
+                cout << "[A] - Add numbers" << endl;
+                cin>>lastNumber;
+                listNumbers.push_back(lastNumber);
+                break;
+
+            case 'M':
+            case 'm':
+            {  
+                float size {};
+                float sum {0};
+                float average {}; 
+
+                cout << "[M] - Display mean of the numbers" << endl;
+
+                size = listNumbers.size();
+
+                for (int i  = 0; i < size; i++){
+
+                    sum = sum + listNumbers[i]++;
+                    
+                }  
+                 
+                average  =  sum/size;
+
+                cout << "The average is: " << average << "."<< endl;
+                
+                break;
             }
-            cout << "]"; 
-            break;
+            case 'S':
+            case 's':
+            {
+                int element {};
+                int smallestElement {};
+                int size {};
 
-        case 'A':
-            cout << "[A] - Add numbers" << endl;
-            break;
+                //{1,2,3,4,5,6}
+                //{2,10,8,4,1,3} --> {1,2,3,4}
+                cout << "[S] - Display the smallest number: ";
 
-        case 'M':
-            cout << "[M] - Display mean of the numbers" << endl;
-            break;
+                size = listNumbers.size();
 
-        case 'S':
-            cout << "[S] - Display the smallest number" << endl;
-            break;
+                for(int i = 0; i < size; i++){
+                    cout<< listNumbers[i]<<endl;
+                    cout<<smallestElement<<endl;
+                    if (listNumbers[i] < smallestElement){
 
-        case 'L':
-            cout << "[L] - Display the largest number" << endl;
-            break;
+                        smallestElement  = listNumbers[i]; 
 
-        case 'Q':
-        case 'q':
-            cout << "[Q] - Print numbers" << endl;
-            control = false;
-            break;
-        
-        default:
+                    }
 
-            cout << "Wrong value try again";
-            break;
+                }
+
+                cout << smallestElement;                   
+  
+                break;
+
+            }
+                
+            case 'L':
+            case 'l':
+                cout << "[L] - Display the largest number" << endl;
+                break;
+
+            case 'Q':
+            case 'q':
+                cout << "[Q] - Print numbers" << endl;
+                control = false;
+                break;
+            
+            default:
+                cout << "Wrong value try again" << endl;
+                break;
         }
 
 
