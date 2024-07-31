@@ -64,36 +64,48 @@ int main(){
                     
                 }  
                  
-                average  =  sum/size;
+                if (size != 0){
 
-                cout << "The average is: " << average << "."<< endl;
+                    average  =  sum/size;
+                    cout << "The average is: " << average << "."<< endl;
+
+                }else{
+
+                    cout << "There is not a mean"<< endl;
+                }
                 
                 break;
             }
             case 'S':
             case 's':
-            {
-                int smallestElement = listNumbers[0];
+            {   
                 int size {};
-
-                //{1,2,3,4,5,6}
-                //{2,10,8,4,1,3} --> {1,2,3,4}
-                cout << "[S] - Display the smallest number: ";
-
                 size = listNumbers.size();
 
-                for(int i = 0; i < size; i++){
-                    
-                    if (listNumbers[i] < smallestElement){
+                if (size != 0){
 
-                        smallestElement  = listNumbers[i]; 
+                    int smallestElement = listNumbers[0];
+                    
+                    cout << "[S] - Display the smallest number: ";
+
+                    for(int i = 0; i < size; i++){
+                        
+                        if (listNumbers[i] < smallestElement){
+
+                            smallestElement  = listNumbers[i]; 
+
+                        }
 
                     }
 
-                }
-
-                cout << smallestElement << endl ;                   
+                    cout << smallestElement << endl ;                   
   
+                }else{
+
+                    cout << "[S] - Unable to get the smalles item" << endl ;
+                      
+                }
+                    
                 break;
 
             }
@@ -101,24 +113,32 @@ int main(){
             case 'L':
             case 'l':
             {
-                int largestElement = listNumbers[0];
+                
                 int size {};
-
-                cout << "[L] - Display the largest number: ";
-
                 size = listNumbers.size();
 
-                for(int i = 0; i < size; i++){
-                    
-                    if (listNumbers[i] > largestElement){
+                if (size != 0 ){
 
-                        largestElement  = listNumbers[i]; 
+                    cout << "[L] - Display the largest number: ";
+
+                    int largestElement = listNumbers[0];
+
+                    for(int i = 0; i < size; i++){
+                        
+                        if (listNumbers[i] > largestElement){
+
+                            largestElement  = listNumbers[i]; 
+
+                        }
 
                     }
 
-                }
+                    cout << largestElement << endl ; 
+                }else{
 
-                cout << largestElement << endl ;  
+                    cout << "[L] - Unable to get the largest number."<< endl;
+                }
+   
                 break;
             }
                 
