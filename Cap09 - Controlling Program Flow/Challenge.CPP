@@ -33,7 +33,7 @@ int main(){
                 cout << "[P] - Print numbers" << endl;
 
                 cout << "["; 
-                for (int i  = 0; i < listNumbers.size(); ++i){
+                for (auto  i  = 0; i < listNumbers.size(); ++i){
                     cout << " " << listNumbers[i];
                 }
                 cout << " ]" << endl; 
@@ -60,7 +60,7 @@ int main(){
 
                 for (int i  = 0; i < size; i++){
 
-                    sum = sum + listNumbers[i]++;
+                    sum = sum + listNumbers[i];
                     
                 }  
                  
@@ -73,8 +73,7 @@ int main(){
             case 'S':
             case 's':
             {
-                int element {};
-                int smallestElement {};
+                int smallestElement = listNumbers[0];
                 int size {};
 
                 //{1,2,3,4,5,6}
@@ -84,8 +83,7 @@ int main(){
                 size = listNumbers.size();
 
                 for(int i = 0; i < size; i++){
-                    cout<< listNumbers[i]<<endl;
-                    cout<<smallestElement<<endl;
+                    
                     if (listNumbers[i] < smallestElement){
 
                         smallestElement  = listNumbers[i]; 
@@ -94,7 +92,7 @@ int main(){
 
                 }
 
-                cout << smallestElement;                   
+                cout << smallestElement << endl ;                   
   
                 break;
 
@@ -102,12 +100,32 @@ int main(){
                 
             case 'L':
             case 'l':
-                cout << "[L] - Display the largest number" << endl;
+            {
+                int largestElement = listNumbers[0];
+                int size {};
+
+                cout << "[L] - Display the largest number: ";
+
+                size = listNumbers.size();
+
+                for(int i = 0; i < size; i++){
+                    
+                    if (listNumbers[i] > largestElement){
+
+                        largestElement  = listNumbers[i]; 
+
+                    }
+
+                }
+
+                cout << largestElement << endl ;  
                 break;
+            }
+                
 
             case 'Q':
             case 'q':
-                cout << "[Q] - Print numbers" << endl;
+                cout << "[Q] - Quitting from application" << endl;
                 control = false;
                 break;
             
