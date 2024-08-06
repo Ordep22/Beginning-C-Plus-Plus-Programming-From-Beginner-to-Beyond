@@ -19,7 +19,7 @@ int main(){
         cout << "[M] - Display mean of the numbers" << endl;
         cout << "[S] - Display the smallest number" << endl;
         cout << "[L] - Display the largest number" << endl;
-        cout << "[Q] - Print numbers" << endl;
+        cout << "[Q] - Quitting from application" << endl;
         cout << "------------------------------------------" << endl;
         cin >> choice;
         cout << "------------------------------------------" << endl;
@@ -96,7 +96,7 @@ int main(){
 
                         }
 
-                    }
+                    } 
 
                     cout << smallestElement << endl ;                   
   
@@ -136,7 +136,7 @@ int main(){
                     cout << largestElement << endl ; 
                 }else{
 
-                    cout << "[L] - Unable to get the largest number."<< endl;
+                    cout << "[L] - Unable to get the largest item."<< endl;
                 }
    
                 break;
