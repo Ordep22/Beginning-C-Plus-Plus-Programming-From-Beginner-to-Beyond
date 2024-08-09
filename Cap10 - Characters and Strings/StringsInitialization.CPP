@@ -10,21 +10,21 @@ int main(){
 
     // Strings declaration 
 
-    string elemente_one;
-    string elemente_two {"Apple"}; 
-    string elemente_three {"Banana"}; 
-    string elemente_four {"kiwi"};  
-    string elemente_five {"apple"}; 
-    string elemente_six {elemente_one}; 
-    string elemente_seven {elemente_one,0,3}; 
-    string elemente_eigth (10,'X');
+    string element_one;
+    string element_two {"Apple"}; 
+    string element_three {"Banana"}; 
+    string element_four {"kiwi"};  
+    string element_five {"apple"}; 
+    string element_six {element_one}; 
+    string element_seven {element_one,0,3}; 
+    string element_eigth (10,'X');
 
     
-    cout << elemente_two << endl;
-    cout << elemente_two.length() << endl;
+    cout << element_two << endl;
+    cout << element_two.length() << endl;
 
     cout << "Elment seven" << endl;
-    cout << elemente_seven << endl;
+    cout << element_seven << endl;
     
 
     //Initialization
@@ -32,14 +32,14 @@ int main(){
     cout << "                             Inicialization                              " << endl;
     cout << "----------------------------------------------------------------------- " << endl;
     
-    cout << "Element One: " << elemente_one << endl;
-    cout << "Element Two: " << elemente_two << endl;
-    cout << "Element Three: " << elemente_three << endl;
-    cout << "Element Four: " << elemente_four << endl;
-    cout << "Element Five: " << elemente_five << endl;
-    cout << "Element Six: " << elemente_six << endl;
-    cout << "Element Seven: " << elemente_seven << endl;
-    cout << "Element Eigth: " << elemente_eigth << endl;
+    cout << "Element One: " << element_one << endl;
+    cout << "Element Two: " << element_two << endl;
+    cout << "Element Three: " << element_three << endl;
+    cout << "Element Four: " << element_four << endl;
+    cout << "Element Five: " << element_five << endl;
+    cout << "Element Six: " << element_six << endl;
+    cout << "Element Seven: " << element_seven << endl;
+    cout << "Element Eigth: " << element_eigth << endl;
 
     cout << "----------------------------------------------------------------------- " << endl;
     cout << "----------------------------------------------------------------------- " << endl;

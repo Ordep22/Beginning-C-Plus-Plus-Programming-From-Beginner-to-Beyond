@@ -7,14 +7,14 @@ int main(){
 
     // Strings declaration 
 
-    string elemente_one;
-    string elemente_two {"Apple"}; 
-    string elemente_three {"Banana"}; 
-    string elemente_four {"kiwi"};  
-    string elemente_five {"apple"}; 
-    string elemente_six {elemente_one}; 
-    string elemente_seven {elemente_one,0,3}; 
-    string elemente_eigth (10,'X');
+    string element_one;
+    string element_two {"Apple"}; 
+    string element_three {"Banana"}; 
+    string element_four {"kiwi"};  
+    string element_five {"apple"}; 
+    string element_six {element_one}; 
+    string element_seven {element_one,0,3}; 
+    string element_eigth (10,'X');
 
 
 
@@ -23,20 +23,20 @@ int main(){
     cout << "                             Inicialization                              " << endl;
     cout << "----------------------------------------------------------------------- " << endl;
 
-    elemente_one = "Watermelon";
-    cout << "Element One is now: " << elemente_one << endl;
-    elemente_two = elemente_one;
+    element_one = "Watermelon";
+    cout << "Element One is now: " << element_one << endl;
+    element_two = element_one;
 
-    cout << "Element Two is now: " << elemente_one << endl; 
+    cout << "Element Two is now: " << element_one << endl; 
 
 
-    elemente_three = "Frank";
-    cout << "Element three is now: " << elemente_three << endl;
+    element_three = "Frank";
+    cout << "Element three is now: " << element_three << endl;
 
-    elemente_three[0] = 'C';
-    cout << "Element three is now: " << elemente_three << endl;
-    elemente_three.at(0) = 'P';
-    cout << "Element three is now: " << elemente_three << endl;
+    element_three[0] = 'C';
+    cout << "Element three is now: " << element_three << endl;
+    element_three.at(0) = 'P';
+    cout << "Element three is now: " << element_three << endl;
     
     cout << "----------------------------------------------------------------------- " << endl;
     cout << "----------------------------------------------------------------------- " << endl;

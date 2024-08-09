@@ -1,10 +1,9 @@
 #include <iostream>
-#include <string>
+#include<string>
 
 using namespace std;
 
 int main(){
-
 
     // Strings declaration 
 
@@ -21,20 +20,14 @@ int main(){
 
     //Comparation
     cout << "----------------------------------------------------------------------- " << endl;
-    cout << "                             Inicialization                              " << endl;
-    cout << "----------------------------------------------------------------------- " << endl;
-    cout << boolalpha;
-
-    cout << element_two << " == " << element_five << ": " << (element_two == element_five) << endl;
-    cout << element_two << " == " << element_three << ": " << (element_two == element_three) << endl;
-    cout << element_two << " != " << element_three << ": " << (element_two != element_three) << endl;
-    cout << element_two << " < " << element_three << ": " << (element_two < element_three) << endl;
-    cout << element_two << " > " << element_three << ": " << (element_two > element_three) << endl;
-    cout << element_three << " > " << element_two << ": " << (element_three > element_two) << endl;
-    
-    cout << "----------------------------------------------------------------------- " << endl;
+    cout << "                             Concatenation                              " << endl;
     cout << "----------------------------------------------------------------------- " << endl;
 
+    element_three = element_five + " and " + element_four + " juice";
+    cout << "Element Three is now: " << element_three << endl;
+
+    cout << "----------------------------------------------------------------------- " << endl;
+    cout << "----------------------------------------------------------------------- " << endl;
 
 
 
