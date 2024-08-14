@@ -10,7 +10,7 @@ int main(){
     string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
     string key  {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
     string enterMessage {};
-    string emcryptingMessage {};
+    string encryptingMessage {};
     string decryptingMessage {};
     //string outputMessage {};
     vector <string> outputMessage {};
@@ -34,18 +34,20 @@ int main(){
 
         if (position != string::npos){
 
-            emcryptingMessage += key.at(position);
+            encryptingMessage += key.at(position);
             
         }else{
 
-            emcryptingMessage += item;
+            encryptingMessage += item;
         }  
-    }    
-    cout << emcryptingMessage << endl;
+    }  
+
+    cout << "Encrypting Message" << endl;  
+    cout << encryptingMessage << endl;
 
     //Decrypting Message
 
-    for (auto item:emcryptingMessage){
+    for (auto item:encryptingMessage){
 
         int position = key.find(item);
 
@@ -59,6 +61,7 @@ int main(){
         }  
     } 
 
+    cout << "Decrypting message" << endl; 
     cout << decryptingMessage << endl;
 
     cout << "----------------------------------------------------------------------- " << endl;
