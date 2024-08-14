@@ -10,10 +10,11 @@ int main(){
     string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
     string key  {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
     string enterMessage {};
-    string editingMessage {};
+    string emcryptingMessage {};
+    string decryptingMessage {};
     //string outputMessage {};
     vector <string> outputMessage {};
-    int position {};
+    
 
 
     cout << "----------------------------------------------------------------------- " << endl;
@@ -23,41 +24,46 @@ int main(){
     cout << "Enter with your messsage: " << endl;
     getline(cin, enterMessage);
 
-    //Pedro Pereira
+    //Encrypting Message
 
     for (auto item:enterMessage){
 
-        position = alphabet.find(item);
+        int position = alphabet.find(item);
 
-        cout << position << endl;
+        //cout << position << endl;
 
-        if (position){
+        if (position != string::npos){
 
-            editingMessage += key[position];
+            emcryptingMessage += key.at(position);
             
-        }else if((position < 0) && (item != 10)){
+        }else{
 
-            editingMessage += item;
+            emcryptingMessage += item;
+        }  
+    }    
+    cout << emcryptingMessage << endl;
+
+    //Decrypting Message
+
+    for (auto item:emcryptingMessage){
+
+        int position = key.find(item);
+
+        if (position != string::npos){
+
+            decryptingMessage += alphabet.at(position);
             
-        }else if (item == 10){
+        }else{
 
-            outputMessage.push_back(editingMessage);
-            editingMessage.erase();
-        }
-    }
+            decryptingMessage += item;
+        }  
+    } 
 
-   
-    cout << outputMessage << endl;
-    
+    cout << decryptingMessage << endl;
+
     cout << "----------------------------------------------------------------------- " << endl;
     cout << "                                                                         " << endl;
     cout << "----------------------------------------------------------------------- " << endl;
-
-
-
-
-
-
-
+    
 
 }
