@@ -1,47 +1,34 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
-
-/*
-input message ABC
-       
-       A
-       ABA
-       ABCBA
-
-input message 12345
-
-     [0]    1
-     [1]    121
-     [2]    12321
-     [3]    1234321
-     [4]    123454321
-
-*/
-
-
 
 int main(){
 
     string inputMessage {};
+    string outputMessage {};
     string editingMessage {};
-    
+    string left_side_editing_message {};
+    string right_side_editing_message {};
+    int messageZise {};
+    int element_message_position {};
 
     cout << "Enter our message: " << endl;
-    getline(cin, inputMessage );
+    getline(cin, inputMessage);
+    messageZise = inputMessage.length();
+    
+    for (int i  = 0; i <= messageZise; ++i)
+    { 
+            left_side_editing_message = inputMessage.substr(0,i);
+            element_message_position = i-1; 
+            if(element_message_position >= 0){
+                right_side_editing_message = inputMessage.substr(0,element_message_position);
+                reverse(right_side_editing_message.begin(),right_side_editing_message.end());
+            }
 
-    for (int i  = 0; i < sizeof(inputMessage); i++){
-
-            editingMessage = inputMessage.substr(0,i+1);
-            cout << editingMessage << endl; 
+            outputMessage = left_side_editing_message + right_side_editing_message;
+            cout << outputMessage << endl; 
     }
-
-
-
-
-
-
-
 
 }
