@@ -63,7 +63,8 @@
     "vector": "cpp",
     "__locale": "cpp",
     "xstring": "cpp",
-    "ios": "cpp"
+    "ios": "cpp",
+    "cmath": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

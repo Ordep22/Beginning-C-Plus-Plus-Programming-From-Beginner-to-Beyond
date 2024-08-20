@@ -14,7 +14,7 @@ int main(){
     int messageZise {};
     int element_message_position {};
 
-    cout << "Enter our message: " << endl;
+    cout << "Enter your message: " << endl;
     getline(cin, inputMessage);
     messageZise = inputMessage.length();
     
