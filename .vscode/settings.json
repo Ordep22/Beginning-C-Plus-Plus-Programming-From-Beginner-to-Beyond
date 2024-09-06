@@ -112,7 +112,12 @@
     "xlocnum": "cpp",
     "xloctime": "cpp",
     "xmemory": "cpp",
-    "xtr1common": "cpp"
+    "xtr1common": "cpp",
+    "thread": "cpp",
+    "chrono": "cpp",
+    "forward_list": "cpp",
+    "ratio": "cpp",
+    "stop_token": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
