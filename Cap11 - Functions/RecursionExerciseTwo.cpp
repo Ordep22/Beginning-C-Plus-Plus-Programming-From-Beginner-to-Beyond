@@ -27,13 +27,7 @@ int function_activation_count(int numberOfDays)
 
     return function_activation_count(actualNumberofDays);
 
-
-
-
-
-
 }
-
 
 int main()
 {
