@@ -1,0 +1,95 @@
+### **Lesson 140 - Separating Specification from Implementation**
+
+When writing C++ programs, it's important to separate the **specification** (what the class or function does) from the **implementation** (how it works).
+
+* **Specification** goes into the **header file (.h)**.
+* **Implementation** goes into the **source file (.cpp)**.
+
+---
+
+#### ✅ **Important to Remember**
+
+* Always include **header files (.h)** in other files, **not the .cpp files**.
+* This ensures proper modularity and avoids multiple definition errors.
+
+---
+
+#### ✅ **When can we implement methods inside the header?**
+
+* If the method is **very simple** (e.g., one line) or **inline**, it's acceptable to write the implementation directly in the header.
+
+Example:
+
+```cpp
+// In Account.h
+class Account {
+public:
+    double getBalance() const { return balance; } // Inline implementation
+private:
+    double balance;
+};
+```
+
+---
+
+### **Avoiding Multiple Inclusions**
+
+If a header file is included more than once during compilation, it can cause errors like **redefinition**.
+To prevent this, we use **Include Guards** or **#pragma once**.
+
+---
+
+#### ✅ **Include Guards**
+
+This is the standard and portable way to avoid multiple inclusions:
+
+```cpp
+#ifndef __ACCOUNT_H
+#define __ACCOUNT_H
+
+/**
+    Account class declaration
+**/
+
+#endif
+```
+
+**How it works:**
+
+* `#ifndef` checks if the macro is not defined.
+* `#define` defines the macro after including the file the first time.
+* If the file is included again, the macro is already defined, so the content is skipped.
+
+---
+
+#### ✅ **`#pragma once`**
+
+An alternative approach:
+
+```cpp
+#pragma once
+
+/**
+    Account class declaration
+**/
+```
+
+**How it works:**
+
+* This directive tells the compiler to include the file only once, no matter how many times it's referenced.
+
+**Difference between Include Guards and `#pragma once`:**
+
+| Feature         | Include Guards                | `#pragma once`                     |
+| --------------- | ----------------------------- | ---------------------------------- |
+| **Portability** | Fully portable (ISO C++)      | Not guaranteed (compiler-specific) |
+| **Performance** | Slightly slower (more checks) | Slightly faster                    |
+| **Ease of Use** | Requires manual macro naming  | Very simple (one line)             |
+
+---
+
+### **Best Practice**
+
+* Prefer **Include Guards** for maximum portability.
+* `#pragma once` is fine for modern compilers where portability is not an issue.
+
