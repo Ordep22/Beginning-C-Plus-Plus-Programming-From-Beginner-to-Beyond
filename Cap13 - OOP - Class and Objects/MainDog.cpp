@@ -18,7 +18,6 @@ int main()
     myDog.set_name(tempName);
     myDog.set_age(tempAge);
     myDog.get_name();
-    myDog.get_age();
     myDog.get_human_age();
 
     return 0;
