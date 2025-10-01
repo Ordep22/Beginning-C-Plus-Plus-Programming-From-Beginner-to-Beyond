@@ -9,6 +9,7 @@ void display_active_players() {
 }
 
 int main() {
+
   display_active_players(); //Before create any player
 
   Player hero("Hero", 100, 50);
